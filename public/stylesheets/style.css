@@ -6,3 +6,16 @@ body {
 a {
   color: #00B7FF;
 }
+
+#latestOrders > div {
+  background-color: lightgrey;
+  padding: 15px;
+  border-radius: 5px;
+  width: 60%;
+  margin: 10px 0px 10px 0px;
+}
+
+#latestOrders > div > h2 {
+  font-size: medium;
+  margin: 0;
+}
