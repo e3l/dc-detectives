@@ -13,7 +13,14 @@ async function loadLatestOrders() {
         const title = document.createElement('h2');
         title.innerHTML = order.title;
         
+        const date = document.createElement('div');
+        var dateArray = order.publication_date.split("-");
+        const months = ["January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        var dateString = months[dateArray[1]-1] + " " + dateArray[2] + ", " + dateArray[0];
+        date.innerHTML = dateString;
+        
         orderDiv.appendChild(title);
+        orderDiv.appendChild(date);
 
         latestOrdersContainer.appendChild(orderDiv);
     });

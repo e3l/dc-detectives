@@ -1,6 +1,7 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align: center;
 }
 
 a {
@@ -12,7 +13,7 @@ a {
   padding: 15px;
   border-radius: 5px;
   width: 60%;
-  margin: 10px 0px 10px 0px;
+  margin: 10px auto 10px auto;
 }
 
 #latestOrders > div > h2 {
