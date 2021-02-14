@@ -29,6 +29,9 @@ export default async function loadLatestOrders() {
         learnMore.innerHTML = 'Learn More';
         orderDiv.appendChild(learnMore);
 
+        const lineBreak2 = document.createElement('hr');
+        orderDiv.appendChild(lineBreak2);
+
         latestOrdersContainer.appendChild(orderDiv);
     });
 }
