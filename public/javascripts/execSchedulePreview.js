@@ -3,6 +3,7 @@ export default async function loadSchedulePreview() {
     previewContainer.innerHTML = '';
 
     const description = document.createElement('h2');
+    description.id = 'upto';
     description.innerHTML = 'What is the President up to?';
     previewContainer.appendChild(description);
 
@@ -34,6 +35,7 @@ export default async function loadSchedulePreview() {
     // find out what most recently passed on the calendar (that's what prez is doing)
     let currentEvent = past[0];
     let currentDescription = document.createElement('h3');
+    currentDescription.id = 'current';
     currentDescription.innerHTML = currentEvent.details;
     previewContainer.appendChild(currentDescription);
 
@@ -45,8 +47,9 @@ export default async function loadSchedulePreview() {
     previewContainer.appendChild(pastEvents);
 
     const LOAD_PAST_ITEMS = 3;
-    past.slice(1, LOAD_PAST_ITEMS).forEach((item) => {
+    past.slice(2, LOAD_PAST_ITEMS + 2).forEach((item) => {
         const scheduleItem = document.createElement('div');
+        scheduleItem.id = 'scheduleItem';
 
         const title = document.createElement('h2');
         title.innerHTML = item.details;
@@ -54,7 +57,7 @@ export default async function loadSchedulePreview() {
 
         if (item.time) {
             const time = document.createElement('p');
-            time.innerHTML = item.time;
+            time.innerHTML = item.time + ' ' + item.date;
             scheduleItem.appendChild(time);
         }
 

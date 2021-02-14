@@ -13,6 +13,7 @@
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
     "node-fetch": "2.6.1",
-    "serve-favicon": "^2.5.0"
+    "xml-js": "1.6.11",
+    "node-summarizer": "1.0.7"
   }
 }

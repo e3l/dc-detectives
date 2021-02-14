@@ -11,9 +11,6 @@ var aboutRouter = require('./routes/aboutus');
 var schedulesRouter = require('./routes/schedules');
 
 var app = express();
-var favicon = require('serve-favicon');
-
-app.use(favicon(__dirname + '/views/favicon.ico'));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

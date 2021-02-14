@@ -8,6 +8,13 @@
   <%- include('header') %>
   <link rel='stylesheet' href='/stylesheets/master.css' />
   <link rel='stylesheet' href='/stylesheets/order.css' />
+  <script type='module'>
+    import summary from '../javascripts/orderSummary.js'
+
+    window.orderNumber = '<%= order.document_number %>';
+
+    summary();
+  </script>
 </head>
 
 <body>
@@ -23,10 +30,11 @@
 
   <div id='details'>
     <div id='left'>
-      <img id="img" src="/images/<%= order.president.name.replace(" ", "") %>.jpg">
+      <img id="img" src="/images/<%= order.president.name.replace(" ", "").toLowerCase() %>.jpg">
     </div>
 
     <div id='right'>
+      <div id='summary'></div>
       <iframe id='preview' src='<%= order.public_inspection_pdf_url %>#toolbar=0&navpanes=0'></iframe>
     </div>
   </div>
