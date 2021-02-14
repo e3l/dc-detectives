@@ -81,12 +81,13 @@
     width: 20%;
     float: left;
     height: fit-content;
+    margin: 20px;
 }
 
 #scheduleInfo {
     width: 80%;
     float: right;
-    padding: 20px;
+    padding-top: 20px;
 }
 
 #recentLabel {
