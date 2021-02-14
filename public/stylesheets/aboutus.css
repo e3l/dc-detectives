@@ -24,8 +24,9 @@ html {
 }
 
 .column img {
-  height: 300px;
-  width: auto;
+  width: 100%;
+  height: auto;
+  margin: auto;
 }
 
 .slide {
@@ -35,4 +36,5 @@ html {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: medium;
   height: 100%;
+  overflow: hidden;
 }

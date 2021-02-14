@@ -18,7 +18,7 @@ router.get('/:number', async function (req, res, next) {
 
 router.get('/summary/:number', async function (req, res, next) {
     let orderNumber = req.params.number;
-    res.send({ summary: await register.getSummaryOfOrder(orderNumber) })
+    res.send(await register.getSummaryOfOrder(orderNumber));
 })
 
 module.exports = router;
