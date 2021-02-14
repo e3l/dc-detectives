@@ -1,0 +1,120 @@
+#orderPageStuff>div>h2 {
+    font-size: small;
+    margin: auto;
+    padding: 20px;
+    background-color: lightgrey;
+}
+
+#latestOrders>div {
+    /* background-color:#e6e6e6; */
+    padding: 15px;
+    width: 80%;
+    margin: 15px auto 15px auto;
+    overflow: hidden;
+    display: block;
+}
+
+#latestOrders>div>h2 {
+    font-size: medium;
+    margin: 6px auto;
+    text-align: left;
+}
+
+#latestOrders>div>div {
+    float: left;
+    display: block;
+}
+
+#latestOrders>div>a {
+    float: right;
+}
+
+#latestLabel {
+    text-align: left;
+    margin-left: 10%;
+    margin-bottom: 18px;
+    margin-top: 28px;
+    font-size: 36px;
+}
+
+#line {
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+    width: 60%;
+    margin: auto;
+    height: 10px;
+}
+
+#schedulePreview {
+    background-color: #ffffff;
+    width: 85%;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 10px;
+    overflow: hidden;
+    align-items: center;
+}
+
+#scheduleBottom {
+    display: flex;
+    align-items: center;
+}
+
+#scheduleInfo>div {
+    border: 2px solid grey;
+    padding: 15px;
+    border-radius: 5px;
+    width: 90%;
+    margin: 10px auto 10px auto;
+}
+
+#scheduleInfo>div>p {
+    margin: auto;
+}
+
+#scheduleInfo>a {
+    display: inline-block;
+    margin: 7px 0 7px 0;
+}
+
+#scheduleBottom>img {
+    width: 20%;
+    float: left;
+    height: fit-content;
+}
+
+#scheduleInfo {
+    width: 80%;
+    float: right;
+    padding: 20px;
+}
+
+#recentLabel {
+    font-size: 20px;
+    margin-bottom: 2px;
+    margin-top: 0;
+}
+
+#upto {
+    font-size: 24px;
+}
+
+#current {
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+#scheduleItem * {
+    font-weight: normal;
+    font-size: 10px;
+}
+
+#scheduleItem h2 {
+    font-size: 14px;
+    margin: 0 0 8px 0;
+}
+
+hr {
+    border-color: rgb(126, 126, 126) 0 0 0;
+    width: 80%;
+}
