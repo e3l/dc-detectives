@@ -1,11 +1,14 @@
-async function loadLatestOrders() {
+export default async function loadLatestOrders() {
     const latestOrdersContainer = document.querySelector('#latestOrders');
+    latestOrdersContainer.innerHTML = '';
+
+    const description = document.createElement('h2');
+    description.innerHTML = 'Latest executive orders:'
+    latestOrdersContainer.appendChild(description);
 
     let response = await fetch('orders/latest');
     let latestOrders = await response.json();
     latestOrders = latestOrders.latestOrders;
-
-    console.log(latestOrders);
 
     latestOrders.results.forEach((order) => {
         const orderDiv = document.createElement('div');
@@ -25,5 +28,3 @@ async function loadLatestOrders() {
         latestOrdersContainer.appendChild(orderDiv);
     });
 }
-
-loadLatestOrders();
