@@ -1,0 +1,33 @@
+#orderPreview {
+    width: 60%;
+    height: 30em;
+    border: none;
+}
+
+#header {
+    margin: 20px;
+}
+
+#details {
+    padding: 20px;
+    display: flex;
+}
+
+#left {
+    width: 40%;
+}
+
+#right {
+    width: 60%;
+}
+
+#preview {
+    width: 90%;
+    height: 30em;
+    margin: auto;
+}
+
+#img {
+    width: 20em;
+    margin: auto;
+}

@@ -15,15 +15,19 @@ export default async function loadLatestOrders() {
 
         const title = document.createElement('h2');
         title.innerHTML = order.title;
+        orderDiv.appendChild(title);
         
         const date = document.createElement('div');
         var dateArray = order.publication_date.split("-");
         const months = ["January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
         var dateString = months[dateArray[1]-1] + " " + dateArray[2] + ", " + dateArray[0];
         date.innerHTML = dateString;
-        
-        orderDiv.appendChild(title);
         orderDiv.appendChild(date);
+
+        const learnMore = document.createElement('a');
+        learnMore.href = '/orders/' + order.document_number;
+        learnMore.innerHTML = 'Learn More';
+        orderDiv.appendChild(learnMore);
 
         latestOrdersContainer.appendChild(orderDiv);
     });

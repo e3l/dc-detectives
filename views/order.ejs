@@ -3,14 +3,31 @@
 
 <head>
   <title>
-    "Order # " <%= orderNum %>
+    Executive Order: <%= order.title %>
   </title>
-  <link rel='stylesheet' href='/stylesheets/style.css' />
-  <script type='module' src='javascripts/latestOrders.js'></script>
+  <link rel='stylesheet' href='/stylesheets/master.css' />
+  <link rel='stylesheet' href='/stylesheets/order.css' />
 </head>
 
 <body>
+  <div id='header'>
+    <h1>
+      <%= order.title %>
+    </h1>
+    <h2>
+      Signed <%= order.signing_date %> by <%= order.president.name %>
+    </h2>
+  </div>
 
+  <div id='details'>
+    <div id='left'>
+      <img id="img" src="/images/<%= order.president.name.replace(" ", "") %>.jpg">
+    </div>
+
+    <div id='right'>
+      <iframe id='preview' src='<%= order.public_inspection_pdf_url %>#toolbar=0&navpanes=0'></iframe>
+    </div>
+  </div>
 </body>
 
 </html>

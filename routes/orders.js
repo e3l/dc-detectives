@@ -11,9 +11,9 @@ router.get('/latest/:amount?', async function (req, res, next) {
     res.send({ latestOrders: await register.getLatestExecutiveOrders(amount) });
 });
 
-router.get('/order/:number', function (req, res, next) {
+router.get('/:number', async function (req, res, next) {
     let orderNumber = req.params.number;
-    res.render('order', { orderNum: orderNumber });
+    res.render('order', { order: await register.getExecutiveOrder(orderNumber) });
 });
 
 module.exports = router;

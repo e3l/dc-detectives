@@ -10,8 +10,6 @@ export default async function loadSchedulePreview() {
     let schedule = await response.json();
     schedule = schedule.schedule;
 
-    console.log(schedule);
-
     // sort into before and after right now
     let currentTime = moment();
 
