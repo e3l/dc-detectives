@@ -5,8 +5,7 @@
   <title>
     <%= title %>
   </title>
-  <link rel='shortcut icon' href='/images/logo.png' />
-  <link rel='stylesheet' href='/stylesheets/master.css' />
+  <%- include('header') %>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
     integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
     crossorigin="anonymous"></script>
@@ -20,12 +19,7 @@
 </head>
 
 <body>
-  <h1>
-    <%= title %>
-  </h1>
-  <p>
-    Welcome to <%= title %>
-  </p>
+  <%- include('menu') %>
   <div id="schedulePreview"></div>
   <div id="latestOrders"></div>
 </body>
