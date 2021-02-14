@@ -5,24 +5,11 @@
   <title>
     About Us
   </title>
+  <%- include('header') %>
   <link rel='stylesheet' href='/stylesheets/aboutus.css' />
 </head>
-<body bgcolor=#e9e9e9 link=black vlink=black style="margin:0;padding:0">
-  <!-- this <ul> part is the menubar, requires a body of margin:0 to work. Might conflict with style.css -->
-  <ul>
-    <li><a href="/">
-        <h3>DC Detectives</h3>
-      </a></li>
-    <li><a href="/">
-        <h3>Executive</h3>
-      </a></li>
-    <li><a href="/">
-        <h3>Legislative</h3>
-      </a></li>
-    <li style="float:right"><a href="aboutus">
-        <h3>About Us</h3>
-      </a></li>
-  </ul>
+<body>
+  <%- include('menu') %>
   <h1 style="color:#4ba9c8;font-size:40px;">
     <center>Our Project</center>
   </h1>
@@ -58,14 +45,15 @@
     </div>
     <div class="column">
       <div class="slide">
-        <img src=https://cdn.pixabay.com/photo/2017/03/05/21/55/emoticon-2120024_640.png alt="PERSON 1"
+        <img src=https://cdn.pixabay.com/photo/2017/03/05/21/55/emoticon-2120024_640.png alt="Andy's Picture"
           style="width:100%">
         <h2>
-          <center>Person Name</center>
+          <center>Andy Li</center>
         </h2>
         <h4> Occupation (Student)</h4>
-        <p> PERSON is a ___ who loves ____. In their free time, ___ likes to ____. </p>
-        <p> contact information (if you want to put it) </p>
+        <p> Andy Li is a student who loves to cook, code, and camp. In their free time, he likes to chill online with his friends and listen to music. </p>
+        <p> Email: jhouandy456@gmail.com </p>
+        <p> Github: https://github.com/il-ydna</p>
       </div>
     </div>
     <div class="column">

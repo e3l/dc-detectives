@@ -5,11 +5,13 @@
   <title>
     Executive Order: <%= order.title %>
   </title>
+  <%- include('header') %>
   <link rel='stylesheet' href='/stylesheets/master.css' />
   <link rel='stylesheet' href='/stylesheets/order.css' />
 </head>
 
 <body>
+  <%- include('menu') %>
   <div id='header'>
     <h1>
       <%= order.title %>
