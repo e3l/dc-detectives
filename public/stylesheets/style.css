@@ -1,10 +1,22 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align: center;
 }
 
 a {
   color: #00B7FF;
+}
+
+b:hover{
+  color: blue;
+}
+
+#orderPageStuff > div > h2 {
+  font-size: small;
+  margin: auto;
+  padding: 20px;
+  background-color: lightgrey;
 }
 
 #latestOrders > div {
@@ -12,10 +24,35 @@ a {
   padding: 15px;
   border-radius: 5px;
   width: 60%;
-  margin: 10px 0px 10px 0px;
+  margin: 10px auto 10px auto;
 }
 
 #latestOrders > div > h2 {
   font-size: medium;
+  margin: 0;
+}
+
+#schedulePreview {
+  background-color: lightgrey;
+  padding: 25px;
+  border-radius: 10px;
+  width: 60%;
+  margin: auto;
+}
+
+#schedulePreview > div {
+  border: 2px solid grey;
+  padding: 15px;
+  border-radius: 5px;
+  width: 60%;
+  margin: 10px auto 10px auto;
+}
+
+#schedulePreview > div > h2 {
+  font-size: medium;
+  margin: 0;
+}
+
+#schedulePreview > div > p {
   margin: 0;
 }

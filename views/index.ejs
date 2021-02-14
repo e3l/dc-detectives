@@ -6,7 +6,14 @@
     <%= title %>
   </title>
   <link rel='stylesheet' href='/stylesheets/style.css' />
-  <script type='module' src='javascripts/latestOrders.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
+  <script type='module'>
+    import latestOrders from './javascripts/latestOrders.js';
+    import execSchedulePreview from './javascripts/execSchedulePreview.js';
+
+    latestOrders();
+    execSchedulePreview();
+  </script>
 </head>
 
 <body>
@@ -16,9 +23,8 @@
   <p>
     Welcome to <%= title %>
   </p>
-  <div id="latestOrders">
-    <h2>Latest executive orders:</h1>
-  </div>
+  <div id="schedulePreview"></div>
+  <div id="latestOrders"></div>
 </body>
 
 </html>
