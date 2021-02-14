@@ -52,7 +52,7 @@ b:hover{
 }
 
 #line {
-  background-color:rgb(0, 0, 0)
+  background-color:rgb(0, 0, 0);
   padding: 5px;
   width: 60%;
   margin: auto;
@@ -74,6 +74,18 @@ b:hover{
 
 #schedulePreview > div > p {
   margin: auto;
+}
+
+#upto {
+  font-size: 30px;
+}
+
+#current {
+  font-weight: normal;
+}
+
+#scheduleItem * {
+  font-weight: normal;
 }
 
 /* CSS of the menu bar */
