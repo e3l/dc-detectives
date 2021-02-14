@@ -2,15 +2,11 @@
 <html>
 
 <head>
-  <link rel="icon" href="favicon.ico">
   <title>
     <%= title %>
   </title>
-  <link rel='shortcut icon' href='/images/logo.png' />
   <link rel='stylesheet' href='/stylesheets/master.css' />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
-    integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
-    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
   <script type='module'>
     import latestOrders from './javascripts/latestOrders.js';
     import execSchedulePreview from './javascripts/execSchedulePreview.js';
@@ -27,8 +23,11 @@
   <p>
     Welcome to <%= title %>
   </p>
+  <hr></hr>
   <div id="schedulePreview"></div>
+  <hr></hr>
   <div id="latestOrders"></div>
+
 </body>
 
 </html>
