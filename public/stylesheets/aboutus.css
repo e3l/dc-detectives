@@ -1,0 +1,57 @@
+  body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  html {
+    box-sizing: border-box;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  .column {
+    float: left;
+    width: 25.0%;
+    margin-bottom: 15px;
+    padding: 15px;
+  }
+
+  .slide {
+    background-color: white;
+    box-shadow: 0 2px 3px 1px black;
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+  }
+/* CSS of the navigation code is found below  */
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ff6f75;
+    border-bottom: 1px solid black;
+  }
+
+  li {
+    float: left;
+    border-right: 2px solid black;
+    box-sizing: border-box;
+  }
+
+  li:last-child {
+    border-right: none;
+    border-left: 2px solid black;
+  }
+
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 12px 20px;
+    text-decoration: none;
+  }
