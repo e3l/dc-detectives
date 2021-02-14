@@ -10,21 +10,24 @@ body {
     font-weight: normal;
 }
 
-
 h3 {
     font-weight: normal;
 }
 
 /*
-a {
-  color: #00B7FF;
-}
 
 b:hover{
   color: blue;
 }
-*/
 
+*/
+a {
+    color: #00B7FF !important;
+}
+
+a:visited {
+    color: inherit;
+}
 
 /* CSS of the menu bar */
 

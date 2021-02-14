@@ -1,6 +1,5 @@
 export default async function loadSchedulePreview() {
     const scheduleContainer = document.querySelector('#schedulePreview');
-    scheduleContainer.innerHTML = '';
 
     const bottomContainer = document.createElement('div');
     bottomContainer.id = 'scheduleBottom';
@@ -8,14 +7,15 @@ export default async function loadSchedulePreview() {
     const infoContainer = document.createElement('div');
     infoContainer.id = 'scheduleInfo';
 
+    let response = await fetch('/schedules/get/executive');
+    let schedule = await response.json();
+    schedule = schedule.schedule;
+
+    scheduleContainer.innerHTML = '';
     const description = document.createElement('h2');
     description.id = 'upto';
     description.innerHTML = 'What is the President up to?';
     scheduleContainer.appendChild(description);
-
-    let response = await fetch('/schedules/get/executive');
-    let schedule = await response.json();
-    schedule = schedule.schedule;
 
     // sort into before and after right now
     let currentTime = moment();

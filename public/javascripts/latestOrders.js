@@ -1,14 +1,16 @@
 export default async function loadLatestOrders() {
     const latestOrdersContainer = document.querySelector('#latestOrders');
-    latestOrdersContainer.innerHTML = '';
-    const description = document.createElement('h2');
-    description.innerHTML = 'Latest executive orders:'
-    description.id = 'latestLabel';
-    latestOrdersContainer.appendChild(description);
 
     let response = await fetch('orders/latest');
     let latestOrders = await response.json();
     latestOrders = latestOrders.latestOrders;
+    
+    latestOrdersContainer.innerHTML = '';
+    
+    const description = document.createElement('h2');
+    description.innerHTML = 'Latest executive orders:'
+    description.id = 'latestLabel';
+    latestOrdersContainer.appendChild(description);
 
     const lineBreak2 = document.createElement('hr');
     latestOrdersContainer.appendChild(lineBreak2);

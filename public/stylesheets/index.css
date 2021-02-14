@@ -116,6 +116,7 @@
 }
 
 hr {
-    border-color: rgb(126, 126, 126) 0 0 0;
+    border-top: 1px solid rgb(126, 126, 126) !important;
+    border-width: 0px;
     width: 80%;
 }
