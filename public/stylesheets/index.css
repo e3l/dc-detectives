@@ -80,7 +80,7 @@
 #scheduleBottom>img {
     width: 20%;
     float: left;
-    height: fit-content;
+    height: auto;
     margin: 20px;
 }
 
